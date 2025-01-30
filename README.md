@@ -55,7 +55,7 @@ Segmented images and overlay results will be saved in the `output_overlay/` dire
 
 ## Results
 <!-- original image: ![original image](images/1.jpg) -->
-original image: ![mask image](output_mask.png)
+Mask image: ![mask image](output_mask.png)
 segmented image: ![segmented image](output_overlay.png)
 
 ## Future Improvements
