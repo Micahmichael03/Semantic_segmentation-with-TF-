@@ -1,12 +1,12 @@
 import cv2
 import random
 import numpy as np
-
+ 
 # Define paths
 cfg_path = r'./models/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt'
 weights_path = r'./models/frozen_inference_graph.pb'
 img_path = r'./images/cat.png'
-
+ 
 # Define display width
 display_width = 200  # Set your desired display width
 
