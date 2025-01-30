@@ -7,7 +7,7 @@ from util import get_detections
 cfg_path = r'./models/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt'
 weights_path = r'./models/frozen_inference_graph.pb'
 
-img_path = r'./images/cat.png'
+img_path = r'./images/cat_and_dog.png'
 
 # load image
 img = cv2.imread(img_path)
@@ -43,8 +43,8 @@ for j in range(len(masks)):
         _, mask = cv2.threshold(mask, 0.5, 255, cv2.THRESH_BINARY)
 
         for c in range(3):
-            empty_img[y1:y2, x1:x2, c] = mask * colors[int(class_id)][c]  #* 0.5 + empty[y1:y2, x1:x2, c] * 0.5
-
+            empty_img[y1:y2, x1:x2, c] = mask * colors[int(class_id)][c]  
+            
 # visualization
 overlay = ((0.6 * empty_img) + (0.4 * img)).astype("uint8")
 
