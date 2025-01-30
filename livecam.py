@@ -1,7 +1,7 @@
 import cv2
 import random
 import numpy as np
-
+ 
 # Define paths
 cfg_path = r'./models/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt'
 weights_path = r'./models/frozen_inference_graph.pb'
